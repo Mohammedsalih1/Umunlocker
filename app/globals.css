@@ -1,26 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #CDE8C3;   /* outer green background */
+  --color-screen: #1E1E1E;       /* main app background (dark) */
+  --color-topbar: #3A3A3A;       /* top header bar */
+  --color-searchbar: #D3D3D3;    /* search bar and cards background */
+  --color-card: #D3D3D3;         /* grid item placeholders */
+  --color-white: #FFFFFF;        /* white areas */
+  --color-nav: #111A2D;          /* bottom navigation bar (dark navy) */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-screen);
 }
