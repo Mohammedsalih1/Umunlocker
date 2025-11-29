@@ -95,17 +95,16 @@ export default function ProductPage({ params }) {
         alt={product.title}
         className="rounded"
       /> */}
-      <div>
+      <div className="text-center">
         <h1 className="text-2xl font-bold mt-4">{product.title}</h1>
         <p className="text-gray-700 mt-2">{product.description}</p>
         <div className="mt-4 text-2xl font-bold text-[#1183d4]">${product.price}</div>
-
         <button 
         onClick={handleWhatsApp}
-          href="https://wa.me/23676057518"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center gap-2 bg-[#1183d4] hover:bg-green-700 text-white px-5 py-3 rounded-xl text-lg font-semibold transition shadow-md"
+          // href="https://wa.me/23676057518"
+          // target="_blank"
+          // rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 cursor-pointer bg-[#1183d4] hover:bg-green-700 text-white px-5 py-3 rounded-xl text-lg font-semibold transition shadow-md"
           >
             الطلب عبر
           <svg
