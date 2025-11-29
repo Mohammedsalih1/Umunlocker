@@ -7,9 +7,14 @@
   --color-searchbar: #D3D3D3;    /* search bar and cards background */
   --color-card: #D3D3D3;         /* grid item placeholders */
   --color-white: #FFFFFF;        /* white areas */
-  --color-nav: #111A2D;          /* bottom navigation bar (dark navy) */
+  --color-nav: #111A2D;           /* bottom navigation bar (dark navy) */
+  --clr: #1d2530; 
+  --bg-card: #ffffff;
+  --border: #d9e0e8;
+  --muted: #ebf0f4;
+  /* primary blue color */
 }
 
 body {
-  background-color: var(--color-screen);
+  background-color: #f8fafc;
 }

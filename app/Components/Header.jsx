@@ -8,7 +8,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#3A3A3A] text-white">
+    <header className="bg-[#111A2D] text-white fixed top-0 w-full z-10 shadow">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* Logo */}
@@ -18,10 +18,10 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-sm">
-          <Link href="/" className="hover:text-gray-300 transition">الرئيسية</Link>
-          <Link href="/about" className="hover:text-gray-300 transition">عن الموقع</Link>
-          <Link href="/services" className="hover:text-gray-300 transition">الخدمات</Link>
-          <Link href="/contact" className="hover:text-gray-300 transition">تواصل معنا</Link>
+          <Link href="/" className="hover:text-gray-300 transition">Home</Link>
+          <Link href="/about" className="hover:text-gray-300 transition">Software</Link>
+          <Link href="/services" className="hover:text-gray-300 transition">Share</Link>
+          <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -30,7 +30,7 @@ export default function Header() {
           onClick={() => setOpen(!open)}
         >
           <svg
-            className="w-7 h-7"
+            className="w-7 h-7 cursor-pointer"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -47,7 +47,7 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {open && (
-        <nav className="md:hidden bg-[#3A3A3A] px-4 pb-4 flex flex-col gap-4 text-sm">
+        <nav className="md:hidden bg-[#111A2D] px-4 pb-4 flex flex-col gap-4 text-sm">
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
           <Link href="/about" className="hover:text-gray-300 transition">About</Link>
           <Link href="/services" className="hover:text-gray-300 transition">Services</Link>

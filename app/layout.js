@@ -1,5 +1,9 @@
+// "use client";
+
 import { Cairo } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 const cairo = Cairo({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 
@@ -14,7 +18,10 @@ export default function RootLayout({ children }) {
       <body
         className={cairo.className}
       >
-        {children}
+        <Header />
+
+          {children}
+        <Footer />
       </body>
     </html>
   );
