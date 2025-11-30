@@ -72,9 +72,10 @@ export default function ProductPage({ params }) {
   return (
     <div className="p-6 mt-20 flex flex-col md:flex-row gap-6 mb-18">
       <div className="mt-6 flex flex-col gap-4">
+        {}
         <input
           type="text"
-          placeholder="اسمك"
+          placeholder="imei & sn"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -85,7 +86,7 @@ export default function ProductPage({ params }) {
           placeholder="الإيميل"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="hidden w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
       </div>
       {/* <Image
