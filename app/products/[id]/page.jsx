@@ -6,43 +6,57 @@ import { useState } from "react";
 const products = [
   {
     id: 1,
-    title: "Wireless Headphones",
-    price: 49,
+    title: "Samsung FRP IMEI/SN WorldWide",
+    price: 20,
     // image: "/images/product1.jpeg",
     description: "High-quality sound with noise cancellation.",
   },
   {
     id: 2,
-    title: "Smart Watch",
-    price: 79,
+      title: "Honor FRP (by SN)",
+      price: 28,
     // image: "/images/product2.jpeg",
     description: "Track fitness, receive notifications, and more.",
   },
   {
     id: 3,
-    title: "Bluetooth Speaker",
-    price: 39,
+      title: "A.N.TOOL Activation 2 Years",
+      price: 20,
     // image: "/images/product3.jpeg",
     description: "Portable speaker with rich and deep audio.",
   },
   {
     id: 4,
-    title: "Gaming Mouse",
-    price: 29,
+      title: "UNLOCK TOOL Activation",
+      price: 21,
     // image: "/images/product4.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
   },
   {
     id: 5,
-    title: "Gaming Mouse",
-    price: 29,
+      title: "Mdm Remove(iTel Tecno Infinix) All Model Support",
+      price: 18,
     // image: "/images/product5.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
   },
   {
     id: 6,
-    title: "Gaming Mouse",
-    price: 29,
+      title: "ACTIVATION starlink",
+      price: 100,
+    // image: "/images/product6.jpeg",
+    description: "Ergonomic design with customizable RGB lights.",
+  },
+  {
+    id: 7,
+      title: "Cheetah TOOL Activation",
+      price: 40,
+    // image: "/images/product6.jpeg",
+    description: "Ergonomic design with customizable RGB lights.",
+  },
+  {
+    id: 8,
+      title: "MI account remove worldwide",
+      price: 28,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
   },
@@ -52,10 +66,13 @@ export default function ProductPage({ params }) {
 
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
+  const [imei, setImei] = useState("");
 
   const handleWhatsApp = () => {
     const phone = "23676057518"; // <-- put your number here (no +)
-    const message = `طلب جديد\n\nالاسم: ${username}\nالإيميل: ${email}\n\nأرغب في طلب المنتج: ${product.title}`;
+      const message = isImeiProduct
+        ? `طلب جديد\n\nIMEI / SN: ${imei}\n\nالمنتج: ${product.title}`
+        : `طلب جديد\n\nالاسم: ${username}\nالإيميل: ${email}\n\nأرغب في طلب المنتج: ${product.title}`;
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -64,6 +81,8 @@ export default function ProductPage({ params }) {
   const { id } = use(params);    // <-- CORRECT for Next.js 15
 
   const product = products.find((p) => p.id == id);
+    const imeiProducts = [1, 2, 5, 8];
+  const isImeiProduct = imeiProducts.includes(Number(product.id));
 
   if (!product) {
     return <div className="p-6 text-red-500">Product not found.</div>;
@@ -71,8 +90,41 @@ export default function ProductPage({ params }) {
 
   return (
     <div className="p-6 mt-20 flex flex-col md:flex-row gap-6 mb-18">
+       {/* Conditional Inputs */}
       <div className="mt-6 flex flex-col gap-4">
-        {}
+
+        {isImeiProduct ? (
+          // INPUT FOR IMEI / SN
+          <input
+            type="text"
+            placeholder="ادخل رمز IMEI او SN"
+            value={imei}
+            onChange={(e) => setImei(e.target.value)}
+            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        ) : (
+          <>
+            {/* USERNAME */}
+            <input
+              type="text"
+              placeholder="اسمك"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+
+            {/* EMAIL */}
+            <input
+              type="email"
+              placeholder="الإيميل"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </>
+        )}
+      </div>
+      {/* <div className="mt-6 flex flex-col gap-4">
         <input
           type="text"
           placeholder="imei & sn"
@@ -88,7 +140,7 @@ export default function ProductPage({ params }) {
           onChange={(e) => setEmail(e.target.value)}
           className="hidden w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
-      </div>
+      </div> */}
       {/* <Image
         src={product.image}
         width={500}
