@@ -36,7 +36,7 @@ export default function ImageSlider({ images = [] }) {
             src={img}
             alt={`Slide ${i}`}
             fill
-            className=""
+            className="object-cover "
           />
         </div>
       ))}
