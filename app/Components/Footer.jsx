@@ -24,21 +24,21 @@ export default function Footer() {
 
         {/* Hardware */}
         <Link href="/hardware" className="flex flex-col items-center gap-1 hover:text-gray-300 transition">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  className="w-6 h-6"
-  viewBox="0 0 24 24"
-  fill="currentColor"
->
-  <path d="M4 5h16a1 1 0 0 1 1 1v10H3V6a1 1 0 0 1 1-1zm-2 13h20v2H2v-2z" />
-</svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M4 5h16a1 1 0 0 1 1 1v10H3V6a1 1 0 0 1 1-1zm-2 13h20v2H2v-2z" />
+          </svg>
 
           <span className="text-xs">Hardware</span>
         </Link>
 
         {/* Share */}
-        <button
-          onClick={() => navigator.share({ title: "Share", url: window.location.href })}
+        <Link href="/share"
+          // onClick={() => navigator.share({ title: "Share", url: window.location.href })}
           className="flex flex-col items-center gap-1 hover:text-gray-300 transition"
         >
           <svg
@@ -53,7 +53,7 @@ export default function Footer() {
               d="M7 10l5-5m0 0l5 5m-5-5v12" />
           </svg>
           <span className="text-xs">Share</span>
-        </button>
+        </Link>
 
         {/* Contact (WhatsApp) */}
         <a
