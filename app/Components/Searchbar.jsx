@@ -14,7 +14,7 @@ export default function SearchBar({ onSearch }) {
       onSubmit={handleSubmit}
       className="w-full px-4 mt-6"
     >
-      <div className="w-full bg-[#D3D3D3] rounded-2xl flex items-center gap-3 px-5 py-3">
+      <div className="mt-22 w-full bg-[#D3D3D3] rounded-2xl flex items-center gap-3 px-5 py-3">
 
         {/* Icon */}
         <svg

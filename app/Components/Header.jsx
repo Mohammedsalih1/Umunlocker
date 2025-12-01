@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#111A2D] text-white fixed top-0 w-full z-10 shadow">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-full mx-0 px-4 py-2 flex items-center justify-between">
         
         {/* Logo */}
         <Link href="/" className="text-xl font-semibold tracking-wide">
