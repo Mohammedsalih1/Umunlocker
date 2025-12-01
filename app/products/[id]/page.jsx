@@ -10,6 +10,8 @@ const products = [
     price: 20,
     // image: "/images/product1.jpeg",
     description: "High-quality sound with noise cancellation.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ const products = [
       price: 28,
     // image: "/images/product2.jpeg",
     description: "Track fitness, receive notifications, and more.",
+    time: "الوقت: 1-15 دقيقة",
+        worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 3,
@@ -24,6 +28,8 @@ const products = [
       price: 20,
     // image: "/images/product3.jpeg",
     description: "Portable speaker with rich and deep audio.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 4,
@@ -31,6 +37,8 @@ const products = [
       price: 21,
     // image: "/images/product4.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ const products = [
       price: 18,
     // image: "/images/product5.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 6,
@@ -45,6 +55,8 @@ const products = [
       price: 100,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 7,
@@ -52,6 +64,8 @@ const products = [
       price: 40,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+        worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 8,
@@ -59,6 +73,8 @@ const products = [
       price: 28,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
 ];
 
@@ -92,7 +108,10 @@ export default function ProductPage({ params }) {
     <div className="p-6 mt-20 flex flex-col md:flex-row gap-6 mb-18">
        {/* Conditional Inputs */}
       <div className="mt-6 flex flex-col gap-4">
-
+      <div className="bg-[#eee] p-4 rounded-2xl">
+        <h2 className="text-left mb-8">{product.title}</h2>
+        <p className="text-white bg-[#1183d4] w-fit py-1 px-2 rounded-2xl">{product.time}</p>
+      </div>
         {isImeiProduct ? (
           // INPUT FOR IMEI / SN
           <input
@@ -148,8 +167,9 @@ export default function ProductPage({ params }) {
         alt={product.title}
         className="rounded"
       /> */}
-      <div className="text-center">
-        <h1 className="text-2xl font-bold mt-4">{product.title}</h1>
+      <div className="text-center md:text-right">
+        <p className="text-[1.1rem] text-red-500 text-right font-bold">تنبيه هام!</p>
+        <h1 className="text-2xl font-bold mt-4 text-right">{product.worning}</h1>
         <p className="text-gray-700 mt-2">{product.description}</p>
         <div className="mt-4 text-2xl font-bold text-[#1183d4]">${product.price}</div>
         <button 
