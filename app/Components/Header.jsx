@@ -13,7 +13,7 @@ export default function Header() {
         
         {/* Logo */}
         <Link href="/" className="text-xl font-semibold tracking-wide">
-          <Image src={assets.logo} alt="website logo" className="w-22" /> 
+          <Image src={assets.logo} alt="website logo" className="w-18" /> 
         </Link>
 
         {/* Desktop Navigation */}
@@ -45,15 +45,34 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu Slide from Right */}
+        <div
+          className={`mt-16
+            md:hidden fixed top-0 left-0 h-full w-64 bg-[#111A2D] text-white 
+            flex flex-col gap-6 text-sm p-6 z-20 
+            transform transition-transform duration-300
+            ${open ? "translate-x-0" : "-translate-x-full"}
+          `}
+        >
+          <Link href="/" onClick={() => setOpen(false)} className="hover:text-gray-300 transition">
+            Home
+          </Link>
+          <Link href="/hardware" onClick={() => setOpen(false)} className="hover:text-gray-300 transition">
+            Hardware
+          </Link>
+          <Link href="/share" onClick={() => setOpen(false)} className="hover:text-gray-300 transition">
+            Share
+          </Link>
+        </div>
+
+      {/* Mobile Menu Dropdown
       {open && (
-        <nav className="md:hidden bg-[#111A2D] px-4 pb-4 flex flex-col gap-4 text-sm">
+        <nav dir="ltr" className="md:hidden bg-[#111A2D] px-4 pb-4 flex flex-col gap-4 text-sm">
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
           <Link href="/hardware" className="hover:text-gray-300 transition">hardware</Link>
           <Link href="/share" className="hover:text-gray-300 transition">share</Link>
-          {/* <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link> */}
         </nav>
-      )}
+      )} */}
     </header>
   );
 }
