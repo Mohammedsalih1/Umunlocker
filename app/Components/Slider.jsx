@@ -42,20 +42,20 @@ export default function ImageSlider({ images = [] }) {
       ))}
 
       {/* Prev Button */}
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60 transition"
       >
         ‹
-      </button>
+      </button> */}
 
       {/* Next Button */}
-      <button
+      {/* <button
         onClick={nextSlide}
         className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60 transition"
       >
         ›
-      </button>
+      </button> */}
     </div>
   );
 }

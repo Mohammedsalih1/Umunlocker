@@ -8,7 +8,7 @@ const products = [
     title: "Samsung FRP IMEI/SN WorldWide Android 11-12-13-14 Only",
     price: 20,
     // image: "/images/product1.jpeg",
-    description: "High-quality sound with noise cancellation.",
+    description: "You must verify the IMEI or SN before sending. We are not responsible for any mistakes in the serial number.",
     time: "الوقت: 1-15 دقيقة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
@@ -17,7 +17,7 @@ const products = [
       title: "Honor FRP (by SN)",
       price: 28,
     // image: "/images/product2.jpeg",
-    description: "Track fitness, receive notifications, and more.",
+    description: "You must verify the IMEI or SN before sending. We are not responsible for any mistakes in the serial number.",
     time: "الوقت: 1-12 ساعة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
@@ -26,7 +26,7 @@ const products = [
       title: "A.N.TOOL Activation 2 Years",
       price: 20,
     // image: "/images/product3.jpeg",
-    description: "Portable speaker with rich and deep audio.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 30-60 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
@@ -35,7 +35,7 @@ const products = [
       title: "UNLOCK TOOL Activation",
       price: 21,
     // image: "/images/product4.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 30-120 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
@@ -44,7 +44,7 @@ const products = [
       title: "Mdm Remove(iTel Tecno Infinix) All Model Support",
       price: 18,
     // image: "/images/product5.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must verify the IMEI or SN before sending. We are not responsible for any mistakes in the serial number.",
     time: "الوقت: 48 ساعة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
@@ -53,7 +53,7 @@ const products = [
       title: "Tsm Tool Pro",
       price: 100,
     // image: "/images/product6.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 10-60 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
@@ -62,7 +62,7 @@ const products = [
       title: "Activation Android Multi Tool",
       price: 40,
     // image: "/images/product6.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 1-15 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
@@ -71,7 +71,7 @@ const products = [
       title: "MI account remove worldwide",
       price: 28,
     // image: "/images/product6.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must verify the IMEI or SN before sending. We are not responsible for any mistakes in the serial number.",
     time: "الوقت: 24-48 ساعة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
@@ -80,7 +80,7 @@ const products = [
       title: "Tsm Tool Pro",
       price: 14,
     // image: "/images/product6.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 1-15 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
@@ -89,7 +89,7 @@ const products = [
       title: "Android Multi Tool",
       price: 13,
     // image: "/images/product6.jpeg",
-    description: "Ergonomic design with customizable RGB lights.",
+    description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 15-45 دقيقة",
     worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },

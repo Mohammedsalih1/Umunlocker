@@ -10,14 +10,10 @@ export default function Home() {
     <>
     <SearchBar />
     <Slider images={[
-          // "/images/slide-1.webp",
-          // "/images/slide-2.webp",
-          // "/images/slide-3.webp",
-          // "/images/slide-4.webp",
-          // "/images/slide-5.png",
-          "/images/slide-5-pc.jpeg",
-          // "/images/slide-5.png",
-          "/images/slide-5-pc.jpeg",
+          "/images/slide-1.jpg",
+          "/images/slide-2.jpg",
+          "/images/slide-3.jpg",
+          "/images/slide-4.jpg",
         ]} />
       <ProductGrid />
     </>
