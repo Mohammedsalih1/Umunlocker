@@ -19,9 +19,9 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-sm">
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
-          <Link href="/about" className="hover:text-gray-300 transition">Software</Link>
-          <Link href="/services" className="hover:text-gray-300 transition">Share</Link>
-          <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link>
+          <Link href="/hardware" className="hover:text-gray-300 transition">hardware</Link>
+          <Link href="/share" className="hover:text-gray-300 transition">Share</Link>
+          {/* <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -49,9 +49,9 @@ export default function Header() {
       {open && (
         <nav className="md:hidden bg-[#111A2D] px-4 pb-4 flex flex-col gap-4 text-sm">
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
-          <Link href="/about" className="hover:text-gray-300 transition">About</Link>
-          <Link href="/services" className="hover:text-gray-300 transition">Services</Link>
-          <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link>
+          <Link href="/hardware" className="hover:text-gray-300 transition">hardware</Link>
+          <Link href="/share" className="hover:text-gray-300 transition">share</Link>
+          {/* <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link> */}
         </nav>
       )}
     </header>

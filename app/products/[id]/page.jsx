@@ -1,12 +1,11 @@
 "use client";
 import { use } from "react";
-import Image from "next/image";
 import { useState } from "react";
 
 const products = [
   {
     id: 1,
-    title: "Samsung FRP IMEI/SN WorldWide",
+    title: "Samsung FRP IMEI/SN WorldWide Android 11-12-13-14 Only",
     price: 20,
     // image: "/images/product1.jpeg",
     description: "High-quality sound with noise cancellation.",
@@ -19,8 +18,8 @@ const products = [
       price: 28,
     // image: "/images/product2.jpeg",
     description: "Track fitness, receive notifications, and more.",
-    time: "الوقت: 1-15 دقيقة",
-        worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+    time: "الوقت: 1-12 ساعة",
+    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
     id: 3,
@@ -28,8 +27,8 @@ const products = [
       price: 20,
     // image: "/images/product3.jpeg",
     description: "Portable speaker with rich and deep audio.",
-    time: "الوقت: 1-15 دقيقة",
-    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+    time: "الوقت: 30-60 دقيقة",
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
   {
     id: 4,
@@ -37,8 +36,8 @@ const products = [
       price: 21,
     // image: "/images/product4.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
-    time: "الوقت: 1-15 دقيقة",
-    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+    time: "الوقت: 30-120 دقيقة",
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
   {
     id: 5,
@@ -46,7 +45,7 @@ const products = [
       price: 18,
     // image: "/images/product5.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
-    time: "الوقت: 1-15 دقيقة",
+    time: "الوقت: 48 ساعة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
   },
   {
@@ -55,8 +54,8 @@ const products = [
       price: 100,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
-    time: "الوقت: 1-15 دقيقة",
-    worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+    time: "الوقت: 10-60 دقيقة",
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
   {
     id: 7,
@@ -65,7 +64,7 @@ const products = [
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
     time: "الوقت: 1-15 دقيقة",
-        worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
   {
     id: 8,
@@ -73,8 +72,26 @@ const products = [
       price: 28,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
-    time: "الوقت: 1-15 دقيقة",
+    time: "الوقت: 24-48 ساعة",
     worning: "يجب التأكد من IMEI او SN قبل الارسال نحن غير مسؤولين عن اي خطأ في الرقم التسلسلي."
+  },
+  {
+    id: 9,
+      title: "Tsm Tool Pro",
+      price: 14,
+    // image: "/images/product6.jpeg",
+    description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 1-15 دقيقة",
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
+  },
+  {
+    id: 10,
+      title: "Android Multi Tool",
+      price: 13,
+    // image: "/images/product6.jpeg",
+    description: "Ergonomic design with customizable RGB lights.",
+    time: "الوقت: 15-45 دقيقة",
+    worning: "يجب التأكد من تسجيل الدخول في موقع الاداة قبل ارسال الايميل واسم المستخدم."
   },
 ];
 

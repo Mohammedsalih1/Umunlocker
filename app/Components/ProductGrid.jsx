@@ -37,21 +37,33 @@ export default function ProductGrid() {
     },
     {
       id: 6,
-      title: "ACTIVATION starlink",
-      price: 100,
-      image: "/images/product6.jpeg",
+      title: "Tsm Tool Pro",
+      price: 14,
+      image: "/images/product10.jpg",
     },
-      {
+    {
       id: 7,
-      title: "Cheetah TOOL Activation",
-      price: 40,
-      image: "/images/product2.jpeg",
+      title: "Android Multi Tool",
+      price: 13,
+      image: "/images/product11.jpg",
     },
       {
       id: 8,
       title: "MI account remove worldwide",
       price: 28,
       image: "/images/product4.jpeg",
+    },
+    {
+      id: 9,
+      title: "ACTIVATION starlink",
+      price: 100,
+      image: "/images/product6.jpeg",
+    },
+    {
+      id: 10,
+      title: "Cheetah TOOL Activation",
+      price: 40,
+      image: "/images/product2.jpeg",
     },
   ];
 
