@@ -46,7 +46,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu Slide from Right */}
-        <div
+        <div dir="ltr"
           className={`mt-16
             md:hidden fixed top-0 left-0 h-full w-64 bg-[#111A2D] text-white 
             flex flex-col gap-6 text-sm p-6 z-20 
