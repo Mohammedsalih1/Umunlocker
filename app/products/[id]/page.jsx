@@ -50,7 +50,7 @@ const products = [
   },
   {
     id: 6,
-      title: "ACTIVATION starlink",
+      title: "Tsm Tool Pro",
       price: 100,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
@@ -59,7 +59,7 @@ const products = [
   },
   {
     id: 7,
-      title: "Cheetah TOOL Activation",
+      title: "Activation Android Multi Tool",
       price: 40,
     // image: "/images/product6.jpeg",
     description: "Ergonomic design with customizable RGB lights.",
@@ -143,7 +143,7 @@ export default function ProductPage({ params }) {
             {/* USERNAME */}
             <input
               type="text"
-              placeholder="اسمك"
+              placeholder="اسم المستخدم"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
