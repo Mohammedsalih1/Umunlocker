@@ -51,7 +51,7 @@ const products = [
   {
     id: 6,
       title: "Tsm Tool Pro",
-      price: 100,
+      price: 14,
     // image: "/images/product6.jpeg",
     description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 10-60 دقيقة",
@@ -60,7 +60,7 @@ const products = [
   {
     id: 7,
       title: "Activation Android Multi Tool",
-      price: 40,
+      price: 13,
     // image: "/images/product6.jpeg",
     description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 1-15 دقيقة",
@@ -77,8 +77,8 @@ const products = [
   },
   {
     id: 9,
-      title: "Tsm Tool Pro",
-      price: 14,
+      title: "ACTIVATION starlink",
+      price: 100,
     // image: "/images/product6.jpeg",
     description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 1-15 دقيقة",
@@ -86,8 +86,8 @@ const products = [
   },
   {
     id: 10,
-      title: "Android Multi Tool",
-      price: 13,
+      title: "Cheetah TOOL Activation",
+      price: 40,
     // image: "/images/product6.jpeg",
     description: "You must make sure you are logged in to the tool’s website before sending the email and username.",
     time: "الوقت: 15-45 دقيقة",
