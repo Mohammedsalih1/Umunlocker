@@ -1,6 +1,4 @@
 "use client";
-
-import Header from "./Components/Header";
 import ProductGrid from "./Components/ProductGrid";
 import SearchBar from "./Components/Searchbar";
 import Slider from "./Components/Slider";

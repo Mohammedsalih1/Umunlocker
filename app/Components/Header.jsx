@@ -8,7 +8,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#111A2D] text-white fixed top-0 w-full z-10 shadow">
+    <header className="bg-main text-white fixed top-0 w-full z-10 shadow">
       <div className="max-w-full mx-0 px-4 py-2 flex items-center justify-between">
         
         {/* Logo */}
@@ -21,7 +21,6 @@ export default function Header() {
           <Link href="/" className="hover:text-gray-300 transition">Home</Link>
           <Link href="/hardware" className="hover:text-gray-300 transition">hardware</Link>
           <Link href="/share" className="hover:text-gray-300 transition">Share</Link>
-          {/* <Link href="/contact" className="hover:text-gray-300 transition">Contact</Link> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -48,7 +47,7 @@ export default function Header() {
       {/* Mobile Menu Slide from Right */}
         <div dir="ltr"
           className={`mt-16
-            md:hidden fixed top-0 left-0 h-full w-64 bg-[#111A2D] text-white 
+            md:hidden fixed top-0 left-0 h-full w-64 bg-main text-white 
             flex flex-col gap-6 text-sm p-6 z-20 
             transform transition-transform duration-300
             ${open ? "translate-x-0" : "-translate-x-full"}
@@ -64,15 +63,6 @@ export default function Header() {
             Share
           </Link>
         </div>
-
-      {/* Mobile Menu Dropdown
-      {open && (
-        <nav dir="ltr" className="md:hidden bg-[#111A2D] px-4 pb-4 flex flex-col gap-4 text-sm">
-          <Link href="/" className="hover:text-gray-300 transition">Home</Link>
-          <Link href="/hardware" className="hover:text-gray-300 transition">hardware</Link>
-          <Link href="/share" className="hover:text-gray-300 transition">share</Link>
-        </nav>
-      )} */}
     </header>
   );
 }

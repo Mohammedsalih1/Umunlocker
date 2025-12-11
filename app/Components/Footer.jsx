@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-[#111A2D] text-white py-3 shadow-lg z-50">
+    <footer className="fixed bottom-0 left-0 w-full bg-main text-white py-3 shadow-lg z-50">
       <div className="flex justify-around items-center text-center">
 
         {/* Home */}
@@ -38,7 +38,6 @@ export default function Footer() {
 
         {/* Share */}
         <Link href="/share"
-          // onClick={() => navigator.share({ title: "Share", url: window.location.href })}
           className="flex flex-col items-center gap-1 hover:text-gray-300 transition"
         >
           <svg
