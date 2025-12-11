@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UM Unlocker 🔓
 
-## Getting Started
+UM Unlocker is a modern web application built to provide professional device unlocking and IMEI-related services in a simple, fast, and secure way.
 
-First, run the development server:
+## 📌 Description
+UM Unlocker is designed to streamline the process of requesting and managing device unlocking services.  
+The project focuses on clean UI, clarity, and ease of use for users looking for reliable unlocking solutions.
 
-```bash
+## 🚀 Features
+- Modern and responsive user interface
+- Clean and user-friendly layout
+- Optimized performance with Next.js
+- Reusable and scalable components
+- Mobile-friendly design
+
+## 🛠 Technologies Used
+- **Next.js** – React framework for production-ready applications
+- **Tailwind CSS** – Utility-first CSS framework for fast UI development
+- **JavaScript**
+- **HTML5**
+
+## 📂 Project Structure
+src/
+ ├─ app/
+ ├─ components/
+ ├─ styles/
+ └─ public/
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mohammedsalih1/Umunlocker.git
+
+2. Navigate to the project directory:
+
+cd Umunlocker
+
+3. Install dependencies:
+
+npm install
+
+4. Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser and visit:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
+   
+🧠 What I Learned
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Building scalable layouts with Tailwind CSS
+Structuring Next.js projects effectively
+Creating clean and responsive UI designs
+Improving user experience through simplicity
 
-## Learn More
+🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome.
+Feel free to open an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License.
 
-## Deploy on Vercel
+👨‍💻 Developer
+Mohammed Salih
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/Mohammedsalih1
